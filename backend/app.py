@@ -13,7 +13,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 # Enable Cross-Origin Resource Sharing (CORS) to allow our React frontend
 # to communicate with this backend.
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 # --- DATABASE CONFIGURATION ---
 # Configure the database. We are using SQLite, a simple file-based database.
