@@ -1,0 +1,166 @@
+/* Import a modern font for a professional look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Basic styling for the whole page */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5; /* A light grey background */
+  color: #1c1e21;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* A container to center our content */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0d6efd; /* A nice blue color */
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Card styling for our form and feedback list */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #343a40;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.75rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+/* Star rating styling */
+.rating-input .stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rating-input .star {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #ced4da; /* Grey color for unselected stars */
+  transition: color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.rating-input .star:hover {
+  transform: scale(1.2); /* Makes stars bigger on hover */
+}
+
+.rating-input .star.selected {
+  color: #ffc107; /* Yellow color for selected stars */
+}
+
+.comment-input {
+  margin-top: 1.5rem;
+}
+
+/* Text area for comments */
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  resize: vertical;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+/* Submit button styling */
+button {
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(to right, #0d6efd, #0d63e0);
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Message that appears after submitting */
+.message {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+/* Styling for the list of feedback */
+.feedback-list {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.feedback-item {
+  border: 1px solid #e9ecef;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item-rating { margin: 0 0 0.5rem 0; }
+.item-comment { margin: 0; font-style: italic; color: #343a40; }
+.item-sentiment {
+  margin-top: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 100px;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Colors for the sentiment tags */
+.sentiment-positive { background-color: #198754; } /* Green */
+.sentiment-negative { background-color: #dc3545; } /* Red */
+.sentiment-neutral { background-color: #ffc107; color: #000;} /* Yellow */
